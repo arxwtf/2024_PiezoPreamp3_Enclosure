@@ -29,7 +29,7 @@ for BOARD in ${SIDES[@]}
 do
     # separating
     echo ""
-    echo "[$BOARD] Separating board from $SOURCE_BOARD.kicad_pcb to $BOARD/$BOARD.kicad_pcb"
+    echo "[$BOARD] Separating board from $SOURCE_BOARD.kicad_pcb to build/$BOARD/$BOARD.kicad_pcb"
     echo "\033[32mkikit separate --looseArcs --source \"annotation; ref: $BOARD\" $SOURCE_BOARD.kicad_pcb build/$BOARD/$BOARD.kicad_pcb \033[91m"
 
     mkdir -p build/$BOARD
