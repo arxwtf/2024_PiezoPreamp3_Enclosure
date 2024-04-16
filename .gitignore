@@ -31,7 +31,7 @@ fp-info-cache
 
 # files generated with ./build.sh command
 build/
-upload/
+# upload/
 
 # OS files
 .DS_Store
