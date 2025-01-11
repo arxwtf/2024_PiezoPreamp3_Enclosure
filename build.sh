@@ -6,6 +6,9 @@ ALL_SIDES=(\
  "TOP" \
  "RIGHT" \
  "LEFT" \
+ "FRONT" \
+ "BACK" \
+ "BOTTOM" \
 )
 
 DEBUG=""
@@ -46,7 +49,7 @@ do
     echo "[$BOARD] Fabricating gerbers and drill files to build/$BOARD/"
     echo "\033[32mkikit fab $FAB$DEBUG build/$BOARD/$BOARD.kicad_pcb build/$BOARD/ \033[91m"
 
-    #mkdir -p build/$BOARD/production
+    mkdir -p build/$BOARD/production
     kikit fab $FAB$DEBUG build/$BOARD/$BOARD.kicad_pcb build/$BOARD/
     
     echo "\033[0m"
